@@ -4,7 +4,7 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 60%;
     padding: 10px 2px;
     margin: 0 auto;
     background-color: $gold;
@@ -19,6 +19,7 @@ form {
     border-radius: 15px;
     width: 60%;
     font-family: $baseFont;
+    text-align: center;
     border: 2px solid $lemon;
   }
   
@@ -33,13 +34,20 @@ form {
     font-family: $baseFont;
     margin: 10px 0;
     font-size: 1.5rem;
+    font-weight: normal;
   }
   
+  .customDadDiv{
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .stackBox {
     display: flex;
     flex-direction: column;
-    margin: 10px 0;
+    margin: 10px auto;
     font-family: $baseFont;
+    width: 60%;
   }
   
   input {
@@ -50,13 +58,14 @@ form {
     border: 2px solid $lemon;
     padding: 0.5em 1em;
     border-radius: 15px;
+    
   }
   
   input:hover {
     cursor: pointer;
   }
   
-  .arrowImage {
+  .arrowDiv {
     position: relative;
   }
   
@@ -66,7 +75,8 @@ form {
     font-family: $baseFont;
     font-size: 2rem;
     text-transform: uppercase;
-    top: 800px;
+    top: 125px;
+    right: 110px;
     background-color: transparent;
     z-index: 10;
   }

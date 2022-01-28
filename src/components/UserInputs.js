@@ -57,7 +57,7 @@ const UserInputs = ({ propTerm, propLimit, propSubmit }) => {
                     </select>
                     <div className='customDadDiv'>
                         <div className="stackBox">
-                            <label htmlFor="jokeNumberOne">Step It Up Please, Add A Dad Joke</label>
+                            <label htmlFor="jokeNumberOne">Please Add A Dad Joke</label>
                             <input
                                 type="text"
                                 value={jokeNumberOne}
@@ -79,9 +79,11 @@ const UserInputs = ({ propTerm, propLimit, propSubmit }) => {
                             />
                         </div>
                     </div>
-
-                    <img src={arrowPic} alt="Click to proceed!" className='arrowImage'></img>
-                    <button type='submit' className='enterButton'>Enter</button>
+                    <div className='arrowDiv'>
+                        <img src={arrowPic} alt="Click to proceed!" className='arrowImage'></img>
+                        <button type='submit' className='enterButton'>Enter</button>
+                    </div>
+                     
 
                 </form>
             </div>
