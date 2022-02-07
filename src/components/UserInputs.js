@@ -1,11 +1,10 @@
+// Modules
 import { useState } from 'react'
-
 import { useNavigate } from "react-router-dom";
-
+// Assets
 import arrowPic from "../styles/assets/arrowPicEdited.png";
 
-
-
+// UserInputs.js
 const UserInputs = ({ propTerm, propLimit, propSubmit }) => {
 
     const [userLimitChoice] = useState(10);
@@ -83,8 +82,6 @@ const UserInputs = ({ propTerm, propLimit, propSubmit }) => {
                         <img src={arrowPic} alt="Click to proceed!" className='arrowImage'></img>
                         <button type='submit' className='enterButton'>Enter</button>
                     </div>
-                     
-
                 </form>
             </div>
         </div>

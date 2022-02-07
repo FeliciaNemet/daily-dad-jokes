@@ -1,22 +1,22 @@
+// Modules
 import { useEffect, useState, useRef } from 'react'
 import axios from 'axios'
 import { useLocation, Link } from "react-router-dom";
-import firebase from "../firebase.js";
-import { getDatabase, ref, onValue, push } from "firebase/database";
 
-
-
+// Results.js
 const Results = ({ submit, userLimitChoice, searchTerm }) => {
 
   const [randomJokes, setRandomJokes] = useState([]);
   const [photos, setPhotos] = useState([]);
   const [userData, setUserData] = useState([]);
+  const [delay, setDelay] = useState(30000);
   const location = useLocation();
   const usersJokes = (location.state);
   const totalJokes = [...randomJokes, ...usersJokes];
-  const [delay, setDelay] = useState(30000);
-  const [pushFirebase, setPushFirebase] = useState([]);
+  
+  
 
+   // randomNumber variable will allow us to get 10 random jokes and photos from the icanhazdadjokes API & unsplash API
   const randomNumber = Math.floor(Math.random() * 30);
 
   // calling unsplash API data to get 10 photos. 
@@ -40,7 +40,7 @@ const Results = ({ submit, userLimitChoice, searchTerm }) => {
 
 
   // create an icanhazdadjokes API call to get 10 jokes
-  // randomNumber variable will allow us to get 10 random jokes from the icanhazdadjokes API
+ 
 
 
   useEffect(() => {
@@ -106,20 +106,6 @@ const Results = ({ submit, userLimitChoice, searchTerm }) => {
     };
   }, [index]);
 
-
-  // adding firebase
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const database = getDatabase(firebase);
-    const dbRootAddress = ref(database);
-    const firedata = {
-      userSave: pushFirebase,
-      userSlideshow: userData,
-    }
-    push(dbRootAddress, firedata);
-  };
-
-
   return (
     <section className='wrapper'>
       <form action="">
@@ -161,11 +147,6 @@ const Results = ({ submit, userLimitChoice, searchTerm }) => {
           ))}
         </div>
       </div>
-      {/* <form action="submit" onSubmit={handleSubmit}>
-        <label htmlFor="">Save your Slideshow</label>
-        <input type="text" id="userSlideshow" onChange={(e) => setPushFirebase(e.target.value)} value={pushFirebase} />
-        <button>Save Slideshow</button>
-      </form> */}
       <Link to='/' className='go-back'>Go back</Link>
     </section>
 
