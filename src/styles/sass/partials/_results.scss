@@ -19,8 +19,10 @@
   border-radius: 40px;
 }
 .slide img {
-    height: 400px;
+    height: 350px;
     width: 350px;
+    object-fit: contain;
+    margin: 20px;
 }
 .joke {
     display: inline;

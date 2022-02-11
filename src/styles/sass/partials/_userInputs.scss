@@ -10,6 +10,9 @@ form {
     background-color: $gold;
     border: 2px solid $burnt;
     border-radius: 15px;
+      p {
+        font-size: 1.3rem;
+      }
   }
   
   .dropDown {
@@ -35,6 +38,7 @@ form {
     margin: 10px 0;
     font-size: 1.5rem;
     font-weight: normal;
+    text-decoration: underline
   }
   
   .customDadDiv{

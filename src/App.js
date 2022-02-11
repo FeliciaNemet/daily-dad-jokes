@@ -3,18 +3,15 @@ import { Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
 // Components
 import Header from './components/Header.js';
-import Results from './components/Results.js';
+import Results from './pages/Results.js';
 import Footer from './components/Footer.js';
-import UserInputs from './components/UserInputs.js';
+import UserInputs from './pages/UserInputs.js';
 // Styles
 import './styles/sass/index.scss';
-
 function App() {
-
   const [submit, setSubmit] = useState(false);
   const [userLimitChoice, setuserLimitChoice] = useState(10);
   const [searchTerm, setSearchTerm] = useState('');
-
   return (
     <div className="dadJokeApp">
       <Header />
@@ -26,5 +23,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

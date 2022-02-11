@@ -4,7 +4,6 @@
 @import "./partials/results";
 @import "./partials/footer";
 @import "./partials/mediaQueries";
-
 body {
   text-align: center;
   background: linear-gradient(
@@ -15,7 +14,6 @@ body {
     rgba(240, 168, 72, 1) 75% 100%
   );
 }
-
 .wrapper {
   max-width: 1200px;
   width: 90%;
