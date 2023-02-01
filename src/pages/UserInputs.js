@@ -43,8 +43,8 @@ const UserInputs = ({ propTerm, propLimit, propSubmit }) => {
                         value={userChoice}
                     >
                         <option value="placeholder" disabled>Choose Your Category</option>
-                        <option value="dogs">Dogs</option>
-                        <option value="cats">Cats</option>
+                        <option value="tools">Tools</option>
+                        <option value="lawn care">Lawn Care</option>
                         <option value="babies">Babies</option>
                         <option value="baby animals">Baby Animals</option>
                         <option value="bunnies">Bunnies</option>
