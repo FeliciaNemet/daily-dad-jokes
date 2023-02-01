@@ -130,7 +130,7 @@ const Results = ({ submit, userLimitChoice, searchTerm }) => {
           ))}
         </div>
       </div>
-      <Link to='/' className='go-back'>Go back</Link>
+      <Link to='/' className='go-back'>Return Home</Link>
     </section>
   )
 }

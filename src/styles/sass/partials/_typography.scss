@@ -1,11 +1,11 @@
-$headerFont: 'Monoton', cursive;
-$baseFont: 'Chicle', cursive;
-$blue: #a8f0f0;
-$gold: #f0a848;
-$margarine: #f0d830;
-$lemon: #f0ffa8;
-$pollen: #f0f0a8;
-$burnt: #d35400;
+$headerFont: 'Permanent Marker', cursive;
+$baseFont: 'Kalam', cursive;
+$blue: navy;
+$gold: rgb(230, 42, 42);
+$margarine: #185c7c;
+$lemon: #5bc9f5;
+$pollen: #5bc9f5;
+$burnt: rgb(88, 10, 10);
 $black: #000000;
 
 
@@ -14,7 +14,7 @@ html {
 }
 body {
      font-family: $baseFont;
-     
+     background-color: navy;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {

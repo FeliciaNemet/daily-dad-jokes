@@ -6,13 +6,7 @@
 @import "./partials/mediaQueries";
 body {
   text-align: center;
-  background: linear-gradient(
-    180deg,
-    rgba(168, 240, 240, 1) 0% 25%,
-    rgba(240, 240, 168, 1) 25% 50%,
-    rgba(240, 216, 48, 1) 50% 75%,
-    rgba(240, 168, 72, 1) 75% 100%
-  );
+  
 }
 .wrapper {
   max-width: 1200px;

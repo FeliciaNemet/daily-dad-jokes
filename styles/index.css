@@ -3,7 +3,8 @@ html {
 }
 
 body {
-  font-family: "Chicle", cursive;
+  font-family: "Kalam", cursive;
+  background-color: navy;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -13,10 +14,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 header h1 {
   font-size: 4rem;
-  font-family: "Monoton", cursive;
+  font-family: "Permanent Marker", cursive;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 4px 4px 2px #f0a848, 8px 8px 2px #d35400;
+  text-shadow: 4px 4px 2px rgb(230, 42, 42), 8px 8px 2px rgb(88, 10, 10);
   font-weight: 400;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -26,7 +27,7 @@ header h1 {
 
 header h2 {
   font-size: 1.6rem;
-  font-family: "Chicle", cursive;
+  font-family: "Kalam", cursive;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 35px auto;
@@ -63,7 +64,7 @@ a {
 }
 
 a:hover {
-  color: #f0ffa8;
+  color: #5bc9f5;
 }
 
 footer p {
@@ -351,8 +352,8 @@ form {
   width: 60%;
   padding: 10px 2px;
   margin: 0 auto;
-  background-color: #f0a848;
-  border: 2px solid #d35400;
+  background-color: rgb(230, 42, 42);
+  border: 2px solid rgb(88, 10, 10);
   border-radius: 15px;
 }
 form p {
@@ -360,29 +361,28 @@ form p {
 }
 
 .dropDown {
-  background-color: #f0ffa8;
+  background-color: #5bc9f5;
   border: none;
   padding: 0.5em 1em;
   border-radius: 15px;
   width: 60%;
-  font-family: "Chicle", cursive;
+  font-family: "Kalam", cursive;
   text-align: center;
-  border: 2px solid #f0ffa8;
+  border: 2px solid #5bc9f5;
 }
 
 .dropDown:hover {
-  color: #f0ffa8;
+  color: #5bc9f5;
   background-color: #000000;
-  border: 2px solid #f0ffa8;
+  border: 2px solid #5bc9f5;
   cursor: pointer;
 }
 
 label {
-  font-family: "Chicle", cursive;
+  font-family: "Kalam", cursive;
   margin: 10px 0;
   font-size: 1.5rem;
   font-weight: normal;
-  text-decoration: underline;
 }
 
 .customDadDiv {
@@ -399,16 +399,16 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 10px auto;
-  font-family: "Chicle", cursive;
+  font-family: "Kalam", cursive;
   width: 60%;
 }
 
 input {
   text-align: center;
   margin: 10px 0;
-  background-color: #f0ffa8;
-  font-family: "Chicle", cursive;
-  border: 2px solid #f0ffa8;
+  background-color: #5bc9f5;
+  font-family: "Kalam", cursive;
+  border: 2px solid #5bc9f5;
   padding: 0.5em 1em;
   border-radius: 15px;
 }
@@ -424,7 +424,7 @@ input:hover {
 .enterButton {
   position: absolute;
   border: none;
-  font-family: "Chicle", cursive;
+  font-family: "Kalam", cursive;
   font-size: 2rem;
   text-transform: uppercase;
   top: 125px;
@@ -435,8 +435,8 @@ input:hover {
 
 .enterButton:hover {
   background-color: #000000;
-  color: #f0ffa8;
-  border: 3px solid #f0ffa8;
+  color: #5bc9f5;
+  border: 3px solid #5bc9f5;
   cursor: pointer;
 }
 
@@ -444,8 +444,8 @@ input:hover {
   margin: 100px auto;
   overflow: hidden;
   max-width: 500px;
-  -webkit-box-shadow: 0 0 0 5px #f0a848, 0 0 0 10px #f0d830, 0 0 0 15px #f0ffa8, 0 0 0 20px #a8f0f0, 0 0 0 25px #60d8d8;
-          box-shadow: 0 0 0 5px #f0a848, 0 0 0 10px #f0d830, 0 0 0 15px #f0ffa8, 0 0 0 20px #a8f0f0, 0 0 0 25px #60d8d8;
+  -webkit-box-shadow: 0 0 0 5px rgb(230, 42, 42), 0 0 0 10px #185c7c, 0 0 0 15px #5bc9f5, 0 0 0 20px navy, 0 0 0 25px #60d8d8;
+          box-shadow: 0 0 0 5px rgb(230, 42, 42), 0 0 0 10px #185c7c, 0 0 0 15px #5bc9f5, 0 0 0 20px navy, 0 0 0 25px #60d8d8;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -503,11 +503,11 @@ input:hover {
   text-decoration: none;
   color: black;
   padding: 20px 40px;
-  background-color: #f0ffa8;
+  background-color: #5bc9f5;
   border-radius: 50%;
 }
 .go-back:hover, .go-back:focus {
-  background-color: #a8f0f0;
+  background-color: navy;
 }
 
 .footerContent {
@@ -519,31 +519,25 @@ input:hover {
   header h1 {
     font-size: 3.5rem;
   }
-
   header h2 {
     font-size: 1.6rem;
   }
-
   .dropDown {
     width: 80%;
     margin: 0 auto;
   }
-
   .stackBox {
     width: 80%;
   }
-
   img {
     width: 190px;
     height: auto;
   }
-
   .enterButton {
     font-size: 1.5rem;
     top: 80px;
     right: 65px;
   }
-
   footer p {
     font-size: 1.2rem;
   }
@@ -552,11 +546,9 @@ input:hover {
   header h1 {
     font-size: 2.5rem;
   }
-
   header h2 {
     margin: 15px auto;
   }
-
   footer p {
     font-size: 1rem;
     font-weight: normal;
@@ -566,12 +558,10 @@ input:hover {
   .slideshow {
     max-width: 400px;
   }
-
   .slide img {
     height: 300px;
     width: 350px;
   }
-
   form {
     width: 80%;
     font-size: 1rem;
@@ -582,21 +572,17 @@ input:hover {
     max-width: 350px;
     margin: 70px auto;
   }
-
   .slide img {
     height: 350px;
     width: 300px;
   }
-
   .joke {
     font-size: 0.7rem;
   }
-
   .slideshowDot {
     height: 15px;
     width: 15px;
   }
-
   .go-back {
     padding: 15px 30px;
     font-size: 1rem;
@@ -606,16 +592,13 @@ input:hover {
   .slideshow {
     max-width: 300px;
   }
-
   .slide img {
     height: 300px;
     width: 250px;
   }
-
   .joke {
     font-size: 0.7rem;
   }
-
   .slideshowDot {
     height: 15px;
     width: 15px;
@@ -634,8 +617,6 @@ input:hover {
 }
 body {
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a8f0f0), color-stop(25%, #f0f0a8), color-stop(50%, #f0d830), color-stop(75%, #f0a848));
-  background: linear-gradient(180deg, #a8f0f0 0% 25%, #f0f0a8 25% 50%, #f0d830 50% 75%, #f0a848 75% 100%);
 }
 
 .wrapper {

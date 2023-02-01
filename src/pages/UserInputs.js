@@ -45,18 +45,17 @@ const UserInputs = ({ propTerm, propLimit, propSubmit }) => {
                         <option value="placeholder" disabled>Choose Your Category</option>
                         <option value="tools">Tools</option>
                         <option value="lawn care">Lawn Care</option>
-                        <option value="babies">Babies</option>
-                        <option value="baby animals">Baby Animals</option>
-                        <option value="bunnies">Bunnies</option>
+                        <option value="sports">Sports</option>
+                        <option value="cars">Cars</option>
+                        <option value="bbq">BBQ</option>
                     </select>
                     <div className='customDadDiv'>
                         <div className="stackBox">
-                            <label htmlFor="jokeNumberOne">Please Add A Dad Joke</label>
-                            <p>Enter 1 Custom Dad Joke</p>
+                            <label htmlFor="jokeNumberOne">Please, Enter Your Custom Dad Jokes Below</label>
                             <input
                                 type="text"
                                 value={jokeNumberOne}
-                                placeholder="Dad Joke Required"
+                                placeholder="Dad Joke Needed (Minimum 1 character)"
                                 onChange={e => setJokeNumberOne(e.target.value)}
                                 required
                             />
